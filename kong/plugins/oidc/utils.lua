@@ -48,6 +48,7 @@ function M.get_options(config, ngx)
   return {
     client_id = config.client_id,
     client_secret = config.client_secret,
+    use_pkce = true,
     discovery = config.discovery,
     introspection_endpoint = config.introspection_endpoint,
     timeout = config.timeout,
