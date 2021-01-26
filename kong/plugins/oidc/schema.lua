@@ -2,7 +2,7 @@ return {
   no_consumer = true,
   fields = {
     client_id = { type = "string", required = true },
-    client_secret = { type = "string", required = true },
+    client_secret = { type = "string", required = false },
     discovery = { type = "string", required = true, default = "https://.well-known/openid-configuration" },
     introspection_endpoint = { type = "string", required = false },
     timeout = { type = "number", required = false },
